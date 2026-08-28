@@ -1,4 +1,4 @@
-{% set version = "2.1.10" %}
+{% set version = "2.1.12" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,12 +9,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/Rmixmod_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/Rmixmod/Rmixmod_{{ version }}.tar.gz
-  sha256: 96d592c36a456ab744b5e885dbbc929e4d1d2a5f4d8489c9c224fe353f0af189
+  sha256: f6941c839d46a6db5f399372ddd386b19c413625e4a5912ed320534ffaf448da
   patches:
     - patches/0001-add-pthread.patch
 
 build:
-  number: 2
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
